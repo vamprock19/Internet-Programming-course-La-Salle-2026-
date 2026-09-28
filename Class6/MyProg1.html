@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            background-color: lightgray;
+        }
+        /* Paragraph styling */
+        p 
+        {
+            color: blue;
+            font-weight: bold;
+        }
+        /* Heading styling */
+        .h
+        {
+            color: red;
+            font-style: italic;
+        }
+        #myh3
+        {
+            color: green;
+            text-decoration: underline;
+        }
+        button , a
+        {
+            background-color: yellow;
+            color: black;
+        }
+
+        input 
+        {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        input[type="password"] 
+        {
+            border: 1px solid red;
+            background-color: lightpink;
+        }
+
+        nav > a 
+        {
+            text-decoration: none;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+
+    <p>this is a paragraph.</p>
+    <h1 class="h">This is a heading.</h1>
+    <h1 class="h">This is another heading.</h1>
+    <h1>This is yet another heading.</h1>
+    <p class="h">This is a paragraph with class h.</p>
+
+
+    <h3>This is a heading level 3.</h3>
+    <h3 id="myh3">this is another heading level 3.</h3>
+
+    <button>Click Me</button>
+    <button>Submit</button>
+
+    <a href="#">This is a link</a>
+    <input type="text" placeholder="Enter text here">
+    <input type="password" placeholder="Enter password here">
+
+
+</body>
+</html>
