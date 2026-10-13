@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>CSS Grid Challenge 4</title>
+
+    <style>
+        * 
+        {
+            box-sizing: border-box;
+        }
+
+        
+        .grid-container 
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 120px);
+            gap: 15px;
+        }
+
+        .card 
+        {
+            background-color: #cbc1eb;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+
+        .card1 
+        {
+            grid-column: span 2;
+        }
+
+        .card2 , .card3 
+        {
+
+            grid-row: span 2;
+        }
+
+    
+   
+    </style>
+</head>
+<body>
+
+    <h1>CSS Grid Challenge 4</h1>
+
+    <div class="grid-container">
+        <div class="card card1">
+            <h2>Card 1 header</h2>
+            <p>This card spans both columns.</p>
+        </div>
+
+        <div class="card card2">
+            <h2>Card 2</h2>
+            <p>This card spans two rows on the left.</p>
+        </div>
+
+        <div class="card card3">
+            <h2>Card 3</h2>
+            <p>This card spans two rows on the right.</p>
+        </div>
+
+        <div class="card card4">
+            <h2>Card 4</h2>
+            <p>Bottom-left card.</p>
+        </div>
+
+        <div class="card card5">
+            <h2>Card 5</h2>
+            <p>Bottom-right card.</p>
+        </div>
+        <div class="card card1">
+            <h2>Card 1 Footer</h2>
+            <p>This card spans both columns.</p>
+        </div>
+    </div>
+
+</body>
+</html>

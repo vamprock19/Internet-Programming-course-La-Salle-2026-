@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .row1 
+        {
+            display: grid;
+            grid-template-columns: 80% 1fr;
+            grid-template-rows: 250px;
+         
+        }
+        .row2 
+        {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 250px;
+       
+        }
+        .card1 
+        {
+            background-color: rgb(154, 167, 237);
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+        .tall
+        {
+            grid-row: span 2;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="row1">
+            <div class="card1">
+                <h1>Card 1</h1>
+                <p>this cards have been laid out using a grid system.</p>
+            </div>
+            <div class="card1">
+                <h1>Card 2</h1>
+                <p>this cards have been laid out using a grid system.</p>
+            </div>
+        </div>
+
+        <div class="row2">
+            <div class="card1 tall">
+                <h1>Card 3</h1>
+                <p>this cards have been laid out using a grid system.</p>
+            </div>
+            <div class="card1">
+                <h1>Card 4</h1>
+                <p>this cards have been laid out using a grid system.</p>
+            </div>
+            <div class="card1">
+                <h1>Card 5</h1>
+                <p>this cards have been laid out using a grid system.</p>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
